@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 1. Install Docker https://docs.docker.com/engine/install/ubuntu/
+# Install Docker https://docs.docker.com/engine/install/ubuntu/
 # Remove any old docker
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 

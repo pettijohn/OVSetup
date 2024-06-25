@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Verify
 sudo docker run hello-world
 
