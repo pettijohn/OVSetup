@@ -21,11 +21,9 @@ sudo apt-get update
 # Install
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-# Verify
-sudo docker run hello-world
 
 
 
 
 
-# 2. Install OpenVino GPU support https://docs.openvino.ai/2024/get-started/configurations/configurations-intel-gpu.html
+
