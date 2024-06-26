@@ -2,6 +2,7 @@
 
 # Install Intel OpenVino GPU support https://docs.openvino.ai/2024/get-started/configurations/configurations-intel-gpu.html
 
+# https://dgpu-docs.intel.com/driver/release-streams.html#ubuntu-server-22-04
 
 # Intel repo pub key 
 wget -qO - https://repositories.intel.com/gpu/intel-graphics.key | sudo gpg --yes --dearmor --output /etc/apt/keyrings/intel.gpg
