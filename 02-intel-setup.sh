@@ -8,7 +8,7 @@
 wget -qO - https://repositories.intel.com/gpu/intel-graphics.key | sudo gpg --yes --dearmor --output /etc/apt/keyrings/intel.gpg
 sudo chmod a+r /etc/apt/keyrings/intel.gpg
 
-echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/intel.gpg] https://repositories.intel.com/gpu/ubuntu jammy/lts/2350 unified" | \
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/intel.gpg] https://repositories.intel.com/gpu/ubuntu jammy/production/2328 unified" | \
 sudo tee /etc/apt/sources.list.d/intel-gpu-jammy.list  
 
 sudo apt update
@@ -22,6 +22,7 @@ sudo apt install -y \
   intel-media-va-driver-non-free libmfx1 libmfxgen1 libvpl2 \
   libegl-mesa0 libegl1-mesa libegl1-mesa-dev libgbm1 libgl1-mesa-dev libgl1-mesa-dri \
   libglapi-mesa libgles2-mesa-dev libglx-mesa0 libigdgmm12 libxatracker2 mesa-va-drivers \
-  mesa-vdpau-drivers mesa-vulkan-drivers va-driver-all vainfo hwinfo clinfo driverctl
+  mesa-vdpau-drivers mesa-vulkan-drivers va-driver-all vainfo hwinfo clinfo driverctl \
+  intel-gpu-tools
 
 sudo usermod -a -G video,render,docker ${USER}
