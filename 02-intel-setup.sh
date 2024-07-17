@@ -8,7 +8,7 @@
 wget -qO - https://repositories.intel.com/gpu/intel-graphics.key | sudo gpg --yes --dearmor --output /etc/apt/keyrings/intel.gpg
 sudo chmod a+r /etc/apt/keyrings/intel.gpg
 
-echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/intel.gpg] https://repositories.intel.com/gpu/ubuntu jammy/production/2328 unified" | \
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/intel.gpg] https://repositories.intel.com/gpu/ubuntu jammy/lts/2350 unified" | \
 sudo tee /etc/apt/sources.list.d/intel-gpu-jammy.list  
 
 sudo apt update
