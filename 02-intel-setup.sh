@@ -25,6 +25,8 @@ sudo apt install -y \
   mesa-vdpau-drivers mesa-vulkan-drivers va-driver-all vainfo hwinfo clinfo driverctl \
   intel-gpu-tools
 
+ sudo usermod -a -G video,render,docker ${USER} 
+
 # # Install Intel OpenVino GPU support https://docs.openvino.ai/2024/get-started/configurations/configurations-intel-gpu.html
 
 # # https://dgpu-docs.intel.com/driver/release-streams.html#ubuntu-server-22-04
